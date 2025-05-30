@@ -8,6 +8,6 @@ app.use(express.static('public'))
 app.get('/', (req, res) => {
   res.sendFile('index.html', { root: 'public' })
 })
-// have the app listen on port 5000   * 5000 is taken so 5001
+// have the app listen on port 5000   * 5000 is taken so usig 5001 instead
 const PORT = 5001
 app.listen(PORT, () => console.log(`Running on port ${PORT}`))
